@@ -1,0 +1,42 @@
+@import "../../shared/scss/colors";
+@import '../../shared/scss/base/mixins';
+
+.container-fluid {
+  background: transparent url("../../../assets/images/intro-BG.png");
+  background-size: cover;
+  padding: 5%;
+  color: #fff;
+  .intro-title{
+font-weight: 500;
+  }
+  .intro-desc {
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+  .panel-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    img {
+      margin: 10px;
+    }
+  }
+  .col-4 .row {
+    margin-bottom: 4%;
+  }
+  .drone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    img {
+      width: 90%;
+    }
+    @include respond(tab-port) {
+
+      padding-top: 20% ;
+
+   }
+  }
+}

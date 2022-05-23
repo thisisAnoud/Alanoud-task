@@ -1,0 +1,41 @@
+.panel {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+
+.memberships-txt-style{
+width: fit-content;
+margin-right: auto;
+margin-left: auto;
+.title{
+font-size: 35px;
+text-align: center;
+}
+.description{
+  font-size: 20px;
+}
+}
+// .half-circle-bg {
+//   width: 40%;
+//   height: 60%;
+//   border-radius: 0 0 100% 100%;
+//   background-color: #ecf8f9;
+//   margin-top: -130px;
+//   border: #ecf8f9;
+//   margin: 10px;
+
+//   // top:-80%;
+// }
+
+.membership-image {
+  opacity: 1;
+  text-align: center;
+  img{
+
+    width: 250px;
+  }
+}
+}

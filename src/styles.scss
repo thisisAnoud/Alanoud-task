@@ -1,0 +1,82 @@
+@import './app/shared/scss/colors';
+@import './app/shared/scss/base/mixins';
+@import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+@font-face {
+  font-family: "SansArab";
+  src: url("./assets/fonts/TheSansArab-Light.ttf") ;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SansArab";
+  src: url("./assets/fonts/TheSansArab-Plain.ttf") ;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SansArab";
+  src: url("./assets/fonts/TheSansArab-Bold.ttf") ;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SansArab";
+  src: url("./assets/fonts/TheSansArab-Black.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+body{
+  font-family: "SansArab" !important;
+  text-align: start !important;
+
+}
+
+.owl-carousel {
+  width: 69vw !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.owl-properties {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 34%;
+  display: block !important;
+  background: transparent !important;
+  color: #000 !important;
+  font-size: 40px !important;
+  img {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    &:hover {
+      background: rgb(184, 180, 180);
+    }
+  }
+}
+
+.panel{
+  min-height: 80vh;
+  @include respond(tab-port) {
+    min-height: 40vh;
+
+ }
+}
+.owl-prev {
+  left: -58px;
+
+  @extend .owl-properties;
+}
+
+.owl-next {
+  right: -21px;
+  @extend .owl-properties;
+}

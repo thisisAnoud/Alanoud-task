@@ -1,0 +1,59 @@
+@import "../../shared/scss/colors";
+.footer-panel {
+  background-color: $secondary-light-color;
+  padding: 3%;
+  padding-bottom: 10%;
+  margin-bottom: 5%;
+  position: relative;
+text-align: center;
+
+  .footer-logo {
+    width: 250px;
+    margin-bottom: 1%;
+  }
+
+
+  .footer-nav-style {
+    padding-right: 0;
+
+    .link {
+      color: #fff;
+      font-size: 16px;
+      margin: 7px;
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+    :hover {
+      opacity: 1;
+    }
+  }
+  .footer-social-style {
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .social-icon {
+    margin: 0 7px;
+    img {
+      width: 25px;
+    }
+  }
+
+  .btn-container{
+    background: transparent url("../../../assets/images/footer-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+    .footer-btn {
+
+        text-align: center;
+      background-color: $secondary-dark-color;
+      color: $white-text-color;
+      padding: 10px 60px;
+      width: fit-content;
+      border-radius: 20px;
+      margin: 30px auto;
+    }
+
+}

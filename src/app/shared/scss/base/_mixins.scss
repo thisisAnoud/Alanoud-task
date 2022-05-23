@@ -1,0 +1,42 @@
+
+@mixin respond($breakpoint) {
+  // Query Manager
+
+  @if $breakpoint == big-desktop {
+      // it will apply all the browser desktop styles
+      // for screen that it width greater than 1200px
+      @media screen and (min-width: 1200px) {
+          @content;
+      }
+  }
+
+  @if $breakpoint == small-phone {
+      @media screen and (max-width: 550px) {
+          @content;
+      }
+  }
+
+  @if $breakpoint == phone {
+      // it will apply all the phone styles
+      // for screen that it width less than 767px
+      @media screen and (max-width: 767px) {
+          @content;
+      }
+  }
+
+  @if $breakpoint == tab-port {
+      // it will apply all the tablet portrait styles
+      // for screen that it width less than 991px
+      @media screen and (max-width: 991px) {
+          @content;
+      }
+  }
+
+  @if $breakpoint == tab-land {
+      // it will apply all the tablet landscape styles
+      // for screen that it width less than 1199px
+      @media screen and (max-width: 1199px) {
+          @content;
+      }
+  }
+}

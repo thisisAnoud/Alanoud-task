@@ -1,0 +1,62 @@
+@import '../../shared/scss/base/mixins';
+
+.cert-container {
+  background: transparent url("../../../assets/images/certifications-bg.png");
+  background-size: cover;
+
+  .cert-clm {
+    // margin: 5%;
+    position: relative;
+    min-height: 550px;
+  }
+
+  .cert-title {
+    background: url("../../../assets/images/Star.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-color: #00b1bf;
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    right: 0;
+    width: 60%;
+    text-align: left;
+    border-radius: 20px 0 0 20px;
+    padding: 25px 0 25px 10%;
+  }
+
+  .cert-desc {
+    background-color: black;
+    opacity: 0.7;
+    color: #fff;
+    padding: 5% 3%;
+    position: absolute;
+    width: 40%;
+    border-radius: 25px;
+    top: 22%;
+    right: 30%;
+    z-index: 0;
+    .desc-title{
+      font-size: 20px;
+      margin-bottom: 25px;
+      font-weight: 400;
+    }
+    .desc-txt{
+      margin-bottom: 35px;
+    }
+    @include respond(tab-port) {
+     width: 60%;
+     padding: 10% 3%;
+
+  }
+  }
+  .btn-style {
+    padding: 0.375rem 1rem;
+    border-radius: 1.5rem;
+    border: #fff 1px solid;
+    color:#fff;
+  }
+}

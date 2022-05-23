@@ -1,0 +1,61 @@
+@import '../../shared/scss/colors';
+@import '../../shared/scss/base/mixins';
+
+.trainig-panel{
+  background: transparent url("../../../assets/images/training-BG.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+background-color: #090912;
+  position: relative;
+
+
+  .align-items-center{
+    height: inherit;
+  }
+
+  .suit-bg{
+    position: absolute;
+    top: 18%;
+    right: -10%;
+    height: 100%;
+    background: transparent url("../../../assets/images/training-suitcase-bg.png");
+    background-repeat: no-repeat;
+    width: 20%;
+    @include respond(tab-port) {
+      width: 50%;
+      top: 35%;
+
+
+   }
+
+  }
+
+  .trainin-txt{
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    width: 20%;
+color: $white-text-color;
+@include respond(tab-port) {
+background-color: #090912;
+opacity: .8;
+width: 50%;
+right: 20%;
+padding: 2%;
+border-radius: 20px;
+}
+.training-title{
+font-weight: 400;
+}
+.training-desc{
+margin: 4%;
+margin-bottom: 8%;
+font-size: 18px;
+}
+
+  }
+
+  @include respond(phone) {
+   min-height: 80vh;
+    }
+}

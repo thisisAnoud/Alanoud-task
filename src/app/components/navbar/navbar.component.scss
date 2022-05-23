@@ -1,0 +1,26 @@
+@import '../../shared/scss/colors';
+@import '../../shared/scss/base/mixins';
+
+.navbar-style{
+  background-color: $primary-color;
+
+  .nav-justify{
+  @include respond(tab-port) {
+  justify-content: space-around!important;
+  width: 90%;
+ }}
+.nav-link{
+color: #fff;
+}
+
+.signup-btn{
+  border: none;
+  background-color: $secondary-light-color;
+  color: #fff;
+  border-radius: 20px;
+  @include respond(tab-port) {
+    margin-right: 0;
+
+   }}
+
+}
